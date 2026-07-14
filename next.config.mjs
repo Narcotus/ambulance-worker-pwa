@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
+  basePath: '/ambulance-worker-pwa',
+  assetPrefix: '/ambulance-worker-pwa',
+  output: 'export',
+  trailingSlash: true,
+  images: { unoptimized: true },
+  typescript: { ignoreBuildErrors: true },
 }
 
 export default nextConfig
